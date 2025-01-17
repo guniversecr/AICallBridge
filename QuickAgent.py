@@ -211,6 +211,9 @@ class TextToSpeech:
         # audio.export("output_audio.wav", format="wav")  # Puedes exportar a MP3 si lo prefieres
         # play(audio)
 
+    def txt(self, text):
+        print(text)
+        
     def tts(self, text): 
         engine = pyttsx3.init()
         voices = engine.getProperty('voices')
@@ -314,6 +317,9 @@ class ConversationManager:
 
             tts = TextToSpeech()
             #tts.speak(llm_response)
+            
+            #tts.txt(llm_response)
+
             tts.tts(llm_response)
             # tts.text_to_speech_openai(llm_response)
             # tts.text_to_speech_elevenlabs(llm_response)
