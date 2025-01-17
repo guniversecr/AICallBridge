@@ -1,0 +1,15 @@
+#instalacion de dependencias 
+pip install -r requirements.txt
+
+
+El codigo funcional (todo STT LLM TTS) esta en QuickAgent.py
+Toda la logica esta en ese archivo y hay que segmentarlo en bloques e hilos asyncronos
+para lograr lo comentado. (Building_blocks)
+
+#ejecutar 
+py .\QuickAgent.py
+
+
+!!!clonar el archivo .env.example a .env las keys son reales!!!
+
+Modificar el archivo system_prompt.txt a gusto.
